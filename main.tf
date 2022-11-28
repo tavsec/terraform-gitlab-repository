@@ -12,7 +12,7 @@ provider "gitlab" {
 }
 
 data "gitlab_group" "group" {
-  full_path = "timotej-avsec"
+  full_path = var.group_name
 }
 
 resource "gitlab_project" "project" {
